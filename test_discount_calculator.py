@@ -28,13 +28,13 @@ class DiscountCalculaterTest(unittest.TestCase):
     def testlessthencost(self):
         cost = calculate_discount(200, 75, 60)
 
-        self.assertEqual(cost, 20)
+        self.assertEqual(cost, 1)
 
 
     def testrelitive_discountgt100(self):
         cost = calculate_discount(200, 110, 10)
 
-        self.assertEqual(cost, 20)
+        self.assertEqual(cost, 1)
 
 if __name__ == '__main__':
     unittest.main()
